@@ -13,3 +13,8 @@ console.log(num2);
 console.log(typeof num2);
 console.log(booleanValue);
 console.log(typeof booleanValue);
+
+
+console.log(+true);
+console.log(+false);
+console.log(+"");
