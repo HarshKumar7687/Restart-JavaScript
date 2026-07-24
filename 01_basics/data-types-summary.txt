@@ -1,0 +1,9 @@
+Data types are of two types primitive and non-primitive data types. Based on how they are stored in data bases
+
+1) primitive data types are call by value whenever we call them we get reference of data not the original data.
+    eg: string, number, boolean, null, undefined , bigint, symbol
+
+2) non primitive data types are call by reference we get the reference or address of a data when we call them.
+    eg: arrays, objects, functions
+
+javascript is a dynamically typed language
