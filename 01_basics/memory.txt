@@ -1,0 +1,68 @@
+data in memory are stored in javascript in two forms.
+
+1) Stack : stores primitive data type. 
+           Primitive values (string, number, boolean, null, undefined, bigint,symbol) are stored directly in the stack.
+           Variables on the stack store references. when we call them we get a copy of the data stored in stack memory.
+
+2) Heap : stores non-primitive data types.
+          Objects, arrays and functions are stored in the heap. heap memory stores address. 
+          when we call them we get the exact data stored in stack memory and if we make changes it are applied to original data.
+
+
+
+JavaScript Stack vs Heap Memory
+
+Example Code:
+
+    let name = "Harsh";
+    let age = 22;
+
+    let user = {
+      city: "Bangalore",
+      skills: ["JS", "TS"]
+    };
+
+    let anotherUser = user;
+    anotherUser.city = "Mumbai";
+
+Memory Layout (Conceptual)
+
+let a = 17;
+let b = a;
+b=3;
+console.log(a);  //17
+console.log(b); //3
+
++-----------------------------------------------------------+
+|                       STACK MEMORY                        |
++-----------------------------------------------------------+
++-----------------------------------------------------------+
+|                       STACK MEMORY                        |
++-----------------------------------------------------------+
++-----------------------------------------------------------+
+|                       STACK MEMORY                        |
++-----------------------------------------------------------+
+
+
+
+
++-----------------------------------------------------------+
+|                       HEAP MEMORY                         |
++-----------------------------------------------------------+
+| Object #1 | { | city: “Mumbai”, | skills ————————–+ | } | |
+| | v | Array [“JS”, “TS”] |                                |
++-----------------------------------------------------------+
+
+Explanation
+
+1.  Primitive values (string, number, boolean, null, undefined, bigint,
+    symbol) are stored directly in the stack.
+
+2.  Objects, arrays and functions are stored in the heap.
+
+3.  Variables on the stack store references (addresses) to heap objects.
+
+4.  user and anotherUser both point to the same object in the heap.
+
+5.  Changing anotherUser.city also changes user.city because both
+    references point to the same heap object.
