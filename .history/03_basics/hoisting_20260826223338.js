@@ -1,0 +1,13 @@
+/*
+Hoisting is JavaScript's behavior of processing declarations before executing the code, allowing function declarations and var
+variables to be referenced before their declaration, with important differences for let, const, and function expressions.
+*/
+
+
+console.log(addOne(5)); // Output: 6
+function addOne(num){
+    return num + 1;
+}
+addOne(5);
+
+const addTwo = function(num){
