@@ -137,7 +137,4 @@ console.log(user?.address?.city); // Output: New York
 console.log(user?.address?.country); // Output: undefined
 
 
-//shortcircuit evaluation
-let isAuthenticated = false;
-let userName = isAuthenticated && "John Doe";
-console.log(userName); // Output: false
+//sh

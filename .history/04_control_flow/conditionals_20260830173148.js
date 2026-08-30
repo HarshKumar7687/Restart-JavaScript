@@ -120,24 +120,3 @@ if (value) {
 }
 
 //nullish coalescing operator
-let userInput = null;
-let defaultValue = "Default";
-let result = userInput ?? defaultValue;
-console.log(result); // Output: Default
-
-
-//optional chaining operator
-let user = {
-    name: "John",
-    address: {
-        city: "New York"
-    }
-};
-console.log(user?.address?.city); // Output: New York
-console.log(user?.address?.country); // Output: undefined
-
-
-//shortcircuit evaluation
-let isAuthenticated = false;
-let userName = isAuthenticated && "John Doe";
-console.log(userName); // Output: false

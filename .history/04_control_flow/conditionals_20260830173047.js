@@ -110,34 +110,9 @@ switch (day) {
 }
 
 //truthy and falsy values
-//falsy values: false, 0, "", null, undefined, NaN
-//truthy values: true, non-zero numbers, non-empty strings, objects, arrays
 let value = 0;
 if (value) {
     console.log("Value is truthy");
 } else {
     console.log("Value is falsy");
 }
-
-//nullish coalescing operator
-let userInput = null;
-let defaultValue = "Default";
-let result = userInput ?? defaultValue;
-console.log(result); // Output: Default
-
-
-//optional chaining operator
-let user = {
-    name: "John",
-    address: {
-        city: "New York"
-    }
-};
-console.log(user?.address?.city); // Output: New York
-console.log(user?.address?.country); // Output: undefined
-
-
-//shortcircuit evaluation
-let isAuthenticated = false;
-let userName = isAuthenticated && "John Doe";
-console.log(userName); // Output: false
