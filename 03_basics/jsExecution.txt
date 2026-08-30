@@ -1,0 +1,36 @@
+JavaScript Execution Context
+
+js is single threaded
+
+1) global execution Context
+this = window object in browser
+this = {} in node
+
+Created when the JavaScript file/program starts executing.
+There is only one Global Execution Context per JavaScript program.
+
+2) functional execution Context
+Created every time a function is called.
+
+function add(a, b) {
+    let result = a + b;
+    return result;
+}
+
+add(10, 20);  // FEC 1
+add(30, 40);  // FEC 2
+
+3) Eval execution Context
+Created when code is executed using the eval() function.
+
+eval("let x = 10; console.log(x);");
+eval() dynamically executes JavaScript code.
+eval() is generally discouraged because it can create security, performance, and debugging problems.
+
+
+global execution -> memory allocation phase -> execution phase
+
+
+open browser -> then inspect -> sources -> snippets -> create new js file and write code in it ->
+add breakpoints after save -> check scope -> check call stack
+
