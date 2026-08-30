@@ -137,7 +137,12 @@ console.log(user?.address?.city); // Output: New York
 console.log(user?.address?.country); // Output: undefined
 
 
-//shortcircuit evaluation
+//short circuit evaluation
 let isAuthenticated = false;
 let userName = isAuthenticated && "John Doe";
 console.log(userName); // Output: false
+
+
+//checking object length
+let obj = { a: 1, b: 2, c: 3 };
+console.log(Object.keys(obj).length); // Output: 3
