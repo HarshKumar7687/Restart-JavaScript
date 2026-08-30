@@ -119,7 +119,7 @@ if (value) {
     console.log("Value is falsy");
 }
 
-//nullish coalescing operator
+//nullish coalescing operator = ?? : checks for null or undefined and returns the right-hand side value if the left-hand side is null or undefined
 let userInput = null;
 let defaultValue = "Default";
 let result = userInput ?? defaultValue;
