@@ -1,5 +1,3 @@
-//7:40:00
-
 let i = 1;
 while(i < 11) {
     console.log(`2 * ${i} : ${i*2}`);
