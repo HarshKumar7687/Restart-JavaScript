@@ -113,7 +113,3 @@ const superheroes = [
 superheroes.forEach((item)=>{
     console.log(`${item.name} => ${item.realName}`)
 })
-
-
-
-//08:24:00
