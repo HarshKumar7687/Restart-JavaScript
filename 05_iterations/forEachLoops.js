@@ -113,3 +113,6 @@ const superheroes = [
 superheroes.forEach((item)=>{
     console.log(`${item.name} => ${item.realName}`)
 })
+
+//note : for each loop doesnt return anything it just iterates over the array and executes the callback function for each element
+//in the array.
