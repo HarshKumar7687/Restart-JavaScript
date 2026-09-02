@@ -122,3 +122,8 @@ const marvelSuperheroes = superheroes.filter((hero)=>{
     return hero.team === "Avengers";
 });
 console.log(marvelSuperheroes); // returns an array of superheroes that are in the Avengers team
+
+const marvelDeadSuperheroes = superheroes.filter((hero)=> {
+    return hero.team === "Avengers" && hero.isAlive === false;
+});
+console.log(marvelDeadSuperheroes); // returns an array of superheroes that are in the Avengers team and are dead
