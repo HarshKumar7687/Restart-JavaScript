@@ -14,3 +14,4 @@ for(const [key,value] of map){
 
 console.log(typeof map)
 console.log(map.size)
+console.log(map.has("IN"))
